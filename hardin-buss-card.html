@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burhan Yanbolu — Hardin AI Solutions</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { min-height:100vh; background:#050508; display:flex; align-items:center; justify-content:center; font-family:'Segoe UI',sans-serif; padding:20px; }
+.card { width:100%; max-width:400px; background:linear-gradient(160deg,#0a0a0f,#050508); border-radius:24px; overflow:hidden; box-shadow:0 40px 80px rgba(0,0,0,0.9); border:1px solid rgba(0,229,255,0.15); }
+.header { background:linear-gradient(135deg,#00e5ff,#00b8d4,#0097a7); padding:36px 28px 28px; position:relative; overflow:hidden; }
+.header::before { content:''; position:absolute; top:-50px; right:-50px; width:200px; height:200px; background:rgba(255,255,255,0.1); border-radius:50%; }
+.header::after { content:''; position:absolute; bottom:-70px; left:-30px; width:240px; height:240px; background:rgba(255,255,255,0.06); border-radius:50%; }
+.brand-tag { font-size:10px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:rgba(0,0,0,0.5); margin-bottom:14px; position:relative; z-index:2; }
+.name { font-size:30px; font-weight:800; color:#050508; line-height:1.1; margin-bottom:6px; position:relative; z-index:2; }
+.title { font-size:12px; font-weight:700; color:rgba(0,0,0,0.5); letter-spacing:2px; text-transform:uppercase; position:relative; z-index:2; }
+.icon-wrap { position:absolute; top:24px; right:24px; z-index:2; font-size:42px; line-height:1; }
+.body { padding:28px; }
+.contact-list { list-style:none; margin-bottom:24px; }
+.contact-list li { display:flex; align-items:center; gap:14px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.05); }
+.contact-list li:last-child { border-bottom:none; }
+.ico { width:38px; height:38px; background:rgba(0,229,255,0.1); border:1px solid rgba(0,229,255,0.2); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0; }
+.contact-label { font-size:10px; color:#555; letter-spacing:1px; text-transform:uppercase; margin-bottom:2px; }
+.contact-value { font-size:14px; color:#e8e8e8; font-weight:500; text-decoration:none; }
+.contact-value:hover { color:#00e5ff; }
+.qr-section { background:rgba(0,229,255,0.03); border:1px solid rgba(0,229,255,0.1); border-radius:16px; padding:20px; text-align:center; margin-bottom:24px; }
+.qr-label { font-size:10px; color:#555; letter-spacing:2px; text-transform:uppercase; margin-bottom:14px; }
+.qr-wrap { display:inline-block; background:#fff; padding:10px; border-radius:10px; margin-bottom:10px; }
+.qr-wrap img { display:block; width:140px; height:140px; }
+.qr-url { font-size:12px; color:#00e5ff; letter-spacing:1px; }
+.actions { display:flex; gap:10px; }
+.btn { flex:1; padding:13px; border-radius:12px; border:none; font-size:13px; font-weight:700; cursor:pointer; text-decoration:none; text-align:center; display:block; transition:opacity 0.2s,transform 0.15s; }
+.btn:hover { opacity:0.88; transform:translateY(-1px); }
+.btn-primary { background:linear-gradient(135deg,#00e5ff,#00b8d4); color:#050508; }
+.btn-outline { background:transparent; color:#00e5ff; border:1px solid rgba(0,229,255,0.35); }
+.footer { text-align:center; padding:0 28px 24px; font-size:10px; color:#333; letter-spacing:1px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="brand-tag">Hardin AI Solutions</div>
+    <div class="name">Burhan Yanbolu</div>
+    <div class="title">CEO & Founder</div>
+    <div class="icon-wrap">🤖</div>
+  </div>
+  <div class="body">
+    <ul class="contact-list">
+      <li>
+        <div class="ico">📞</div>
+        <div><div class="contact-label">Phone</div><a href="tel:+447740304061" class="contact-value">+44 7740 304061</a></div>
+      </li>
+      <li>
+        <div class="ico">✉️</div>
+        <div><div class="contact-label">Email</div><a href="mailto:info@hardinai.co.uk" class="contact-value">info@hardinai.co.uk</a></div>
+      </li>
+      <li>
+        <div class="ico">🌐</div>
+        <div><div class="contact-label">Website</div><a href="https://hardinai.co.uk" target="_blank" class="contact-value">hardinai.co.uk</a></div>
+      </li>
+      <li>
+        <div class="ico">📍</div>
+        <div><div class="contact-label">Location</div><span class="contact-value">London, United Kingdom</span></div>
+      </li>
+    </ul>
+    <div class="qr-section">
+      <div class="qr-label">Scan to visit our website</div>
+      <div class="qr-wrap">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://hardinai.co.uk" alt="QR hardinai.co.uk">
+      </div>
+      <div class="qr-url">hardinai.co.uk</div>
+    </div>
+    <div class="actions">
+      <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Burhan%20Yanbolu%0AORG:Hardin%20AI%20Solutions%0ATITLE:CEO%20%26%20Founder%0ATEL:+447740304061%0AEMAIL:info@hardinai.co.uk%0AURL:https://hardinai.co.uk%0AEND:VCARD" download="Burhan-Yanbolu-Hardin-AI.vcf" class="btn btn-primary">💾 Save Contact</a>
+      <a href="https://hardinai.co.uk" target="_blank" class="btn btn-outline">🌐 Visit Site</a>
+    </div>
+  </div>
+  <div class="footer">AI SOFTWARE · AUTOMATION · SEO FOR UK SMEs</div>
+</div>
+</body>
+</html>
